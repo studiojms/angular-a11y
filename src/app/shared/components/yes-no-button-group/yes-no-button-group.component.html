@@ -8,6 +8,7 @@
   <button
     appKeyManagerItem
     role="radio"
+    [attr.disabled]="disabled ? disabled : null"
     (focused)="activate(options.YES)"
     [attr.aria-checked]="value == options.YES"
     type="button"
@@ -21,6 +22,7 @@
   <button
     appKeyManagerItem
     role="radio"
+    [attr.disabled]="disabled ? disabled : null"
     (focused)="activate(options.NO)"
     [attr.aria-checked]="value == options.NO"
     type="button"
